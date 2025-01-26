@@ -4,11 +4,11 @@ metadata:
   name: letsencrypt-staging
 spec:
   acme:
-    email: hello@hello.com
+    email: mishra.satyanarayan@gmail.com
     server: https://acme-staging-v02.api.letsencrypt.org/directory
     privateKeySecretRef:
       name: letsencrypt-staging
     solvers:
     - http01:
         ingress:
-          class: nginx
+          class: istio
